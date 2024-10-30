@@ -1,0 +1,118 @@
+/* start gloable rows  */
+:root {
+  --main-color: orangered;
+  --white-color: white;
+  --main-padding: 60px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: #1d0e15;
+}
+.container {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-right: auto;
+  padding-left: auto;
+}
+ul {
+  list-style: none;
+}
+.active {
+  display: flex;
+}
+.title {
+  margin: 40px;
+  text-align: center;
+  background-size: cover;
+}
+.title div {
+  color: var(--main-color);
+  font-size: 20px;
+}
+.title h3 {
+  font-size: 25px;
+  margin: 5px 0px 0px 0px;
+  color: white;
+}
+/* end gloable rows  */
+/* start header  */
+.header {
+  min-height: 100vh;
+  background-image: url("../public/images/home-bg.jpg");;
+  padding-bottom: var(--main-padding);
+}
+
+header .min-title {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+header .min-title span {
+  color: var(--main-color);
+}
+header .container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+    align-items: center;
+}
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header ul li {
+  margin-right: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+header ul li a:hover {
+  color: var(--main-color);
+}
+header .links i {
+  color: var(--white-color);
+  display: none;
+  font-size: 30px;
+  transform: rotate(150s);
+}
+@media (max-width: 767px) {
+  header .container {
+    margin-left: 0px; /*for catch all width*/
+    margin-right: 0px;
+  }
+  header .links i {
+    display: block;
+  }
+  header ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 10px;
+    z-index: 4;
+  }
+  header ul li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  header ul li a {
+    color: black;
+  }
+}

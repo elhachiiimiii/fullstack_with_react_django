@@ -1,0 +1,137 @@
+/* start header  */
+.header {
+  min-height: 100vh;
+  background-image: url("../public/images/home-bg.jpg");
+  padding-bottom: var(--main-padding);
+  background-position: center;
+  background-size: cover;
+}
+
+header .min-title {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+header .min-title span {
+  color: var(--main-color);
+}
+header .container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+header ul li {
+  margin-right: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+header ul li a:hover {
+  color: var(--main-color);
+}
+header .links i {
+  color: var(--white-color);
+  display: none;
+  font-size: 30px;
+  transform: rotate(150s);
+}
+@media (max-width: 767px) {
+  header .container {
+    margin-left: 0px; /*for catch all width*/
+    margin-right: 0px;
+  }
+  header .links i {
+    display: block;
+  }
+  header ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 10px;
+    z-index: 4;
+  }
+  header ul li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  header ul li a {
+    color: black;
+  }
+}
+/* start header-content */
+.header-content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.header-content .container div {
+  flex-basis: 500px;
+  justify-self: center;
+  align-self: center;
+}
+@media (max-width: 1060px) {
+  .header-content .container div {
+    flex-basis: 400px;
+  }
+}
+@media (max-width: 900px) and (min-width: 770px) {
+  .header-content .container div {
+    flex-basis: 300px;
+  }
+}
+.header-content .container div img {
+  width: 100%;
+}
+@media (max-width: 1070px) {
+  .header-content .container div.info {
+    text-align: center;
+  }
+}
+.header-content .container div.info h4 {
+  color: var(--main-color);
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+.header-content .container div.info p {
+  color: var(--white-color);
+  font-weight: normal;
+  font-size: 35px;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1070px) {
+  .header-content .container div.info p {
+    width: 100%;
+  }
+}
+.header-content .container div.info button {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.header-content .container div.info button:hover {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+/* end header-content */

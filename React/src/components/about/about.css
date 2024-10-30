@@ -1,0 +1,72 @@
+
+.about {
+  padding-bottom: var(--main-padding);
+  padding-top: var(--main-padding);
+}
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 360px) {
+  .container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.about .container div {
+  flex-basis: 500px;
+  align-self: center;
+}
+@media (max-width: 1060px) {
+  .about .container div {
+    flex-basis: 400px;
+  }
+}
+@media (max-width: 900px) and (min-width: 770px) {
+  .about .container div {
+    flex-basis: 300px;
+  }
+}
+.about .container div.about-us {
+  padding: 20px;
+}
+.about .container div.about-us h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.about .container div.about-us p:first-of-type {
+  font-weight: normal;
+  font-size: 25px;
+  color: var(--white-color);
+}
+.about .container div.about-us p:last-of-type {
+  font-weight: normal;
+  line-height: 1.6;
+  color: #ccc;
+}
+.about .container div.about-us ul {
+  padding: 0px;
+}
+.about .container div.about-us ul li {
+  color: var(--white-color);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.about .container div.about-us ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f14a";
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+.about .container div img {
+  width: 100%;
+}
+@media (max-width: 770px) {
+  .about .container div.image {
+    order: -1;
+  }
+}

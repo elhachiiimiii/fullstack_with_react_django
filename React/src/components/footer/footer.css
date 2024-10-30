@@ -1,0 +1,107 @@
+footer {
+  background-image: url("../../../public/images/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: var(--main-padding);
+}
+footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .footer-content div h2 {
+  font-weight: normal;
+  color: var(--white-color);
+}
+footer .footer-content div p {
+  color: #ccc;
+}
+footer .footer-content div:not(.news) p:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+footer .footer-content div.links p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  color: var(--main-color);
+  margin-right: 5px;
+}
+footer .footer-content div.contact p:first-of-type::before,
+footer .footer-content div.contact p:nth-of-type(2)::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f095";
+  color: var(--main-color);
+  margin-right: 5px;
+}
+footer .footer-content div.contact p:nth-of-type(3)::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+  color: var(--main-color);
+  margin-right: 5px;
+}
+footer .footer-content div.contact p:last-of-type::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f279";
+  color: var(--main-color);
+  margin-right: 5px;
+}
+footer .footer-content div.follow p:before {
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  color: var(--main-color);
+  margin-right: 5px;
+}
+footer .footer-content div.follow p:first-of-type:before {
+  content: "\f39e";
+}
+footer .footer-content div.follow p:nth-of-type(2):before {
+  content: "\f099";
+}
+footer .footer-content div.follow p:nth-of-type(3):before {
+  content: "\f16d";
+}
+footer .footer-content div.follow p:last-of-type:before {
+  content: "\f08c";
+}
+footer .footer-content div.news input {
+  margin-bottom: 20px;
+  padding: 15px 30px 15px 10px;
+}
+footer .footer-content div.news input:hover {
+  outline: none;
+}
+footer .footer-content div.news button {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+footer .footer-content div.news button:hover {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+footer .Created {
+  color: var(--white-color);
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: capitalize;
+  font-size: 20px;
+}
+footer .Created span {
+  color: var(--main-color);
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #ccc;
+}

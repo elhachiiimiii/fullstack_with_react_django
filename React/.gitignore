@@ -1,0 +1,10 @@
+# Django
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# React
+node_modules/
+build/
+.DS_Store
